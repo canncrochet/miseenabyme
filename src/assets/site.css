@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Andada);
+
 html,body {
 	padding:0;
 	margin:0;
@@ -8,6 +10,17 @@ html,body {
 
 body {
 	background: #666 url('walltest4.jpg') 50% 50%;
+}
+
+h1 {
+	width: 800px;
+	color:  #eee;
+	margin:0 auto;
+	margin-top:20px;
+	padding-left: 85px;
+	font-family: 'Andada', serif;
+	font-size:105px;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 #content {
@@ -39,8 +52,8 @@ body {
 #shadow2, #shadow3 {
 	position:absolute;
 	background: url('shadow.png') no-repeat 0 0;
+	opacity: 0.1;
 }
-
 
 #chair1 {
 	width: 235px;
@@ -48,12 +61,16 @@ body {
 	left: 20px;
 	top:130px;
 	z-index: 5;
-	animation: chair1 4.1s linear 0s infinite alternate;
+	animation: chair1 4.1s ease-in-out 0s infinite alternate;
 }
 
-
 @keyframes chair1 {
-  from { transform: translateY(0); } to { transform: translateY(30px); }
+  0% {
+  	transform: translateY(0);
+  }
+  100% {
+  	transform: translateY(30px);
+  }
 }
 
 #chair2 {
@@ -63,7 +80,16 @@ body {
 	left: 242px;
 	top:180px;
 	z-index: 4;
-	animation: chair2 3.9s linear 0s infinite alternate;
+	animation: chair2 3.9s ease-in-out 0s infinite alternate;
+}
+
+@keyframes chair2 {
+  0% {
+  	transform: translateY(0);
+  }
+  100% {
+  	transform: translateY(15px);
+  }
 }
 
 #shadow2{
@@ -71,14 +97,18 @@ body {
 	top:450px;
 	width: 161px;
 	height: 33px;
-	animation: shadow2 3.9s linear 0s infinite alternate;
-}
-@keyframes shadow2{
-  from { transform: scale(0.4); } to { transform: scale(0.6); }
+	animation: shadow2 3.9s ease-in-out 0s infinite alternate;
 }
 
-@keyframes chair2 {
-  from { transform: translateY(0); } to { transform: translateY(15px); }
+@keyframes shadow2{
+  0% {
+  	transform: scale(0.4);
+  	opacity:0.4;
+  }
+  100% {
+  	transform: scale(0.6);
+  	opacity:0.6;
+  }
 }
 
 #chair3 {
@@ -88,11 +118,16 @@ body {
 	left: 347px;
 	top: 185px;
 	z-index: 3;
-	animation: chair3 4s linear 0s infinite alternate;
+	animation: chair3 4s ease-in-out 0s infinite alternate;
 }
 
 @keyframes chair3{
-  from { transform: translateY(0); } to { transform: translateY(10px); }
+  0% {
+  	transform: translateY(0);
+  }
+  100% {
+  	transform: translateY(10px);
+  }
 }
 
 #shadow3{
@@ -100,10 +135,17 @@ body {
 	top: 370px;
 	width: 161px;
 	height: 33px;
-	animation: shadow3 4s linear 0s infinite alternate;
+	animation: shadow3 4s ease-in-out 0s infinite alternate;
 }
 @keyframes shadow3{
-  from { transform: scale(0.3); } to { transform: scale(0.4); }
+  0% {
+  	transform: scale(0.3);
+  	opacity:0.3;
+  }
+  100% {
+  	transform: scale(0.4);
+  	opacity:0.4;
+  }
 }
 
 
