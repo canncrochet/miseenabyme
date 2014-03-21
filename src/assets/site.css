@@ -13,16 +13,16 @@ body {
 }
 
 h1 {
-	width: 800px;
+	width: 100%;
 	position:fixed;
 	z-index: 100;
 	color:  #eee;
 	margin:0 auto;
 	margin-top:20px;
-	padding-left: 85px;
 	font-family: 'Andada', serif;
 	font-size:105px;
 	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	text-align:center;
 }
 
 #content {
