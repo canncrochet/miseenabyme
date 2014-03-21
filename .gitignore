@@ -3,3 +3,4 @@ src/bower_components
 .DS_Store
 npm-debug.log
 webroot
+.grunt
