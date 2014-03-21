@@ -37,6 +37,7 @@ module.exports = function(grunt) {
         'useminPrepare': {
             'html': ['<%= cfg.src %>/index.html'],
             'options': {
+                'root': '<%= cfg.src %>',
                 'dest': '<%= cfg.build %>'
             }
         },
@@ -55,6 +56,17 @@ module.exports = function(grunt) {
                 'base': '<%= cfg.build %>'
             },
             'src': '**/*'
+        },
+        'copy': {
+            'default': {
+                'files': [{
+                    'expand': true,
+                    'flatten': true,
+                    'dest': '<%= cfg.build %>',
+                    'src': ['<%= cfg.src %>/*.html', 'CNAME'],
+                    'filter': 'isFile'
+                }]
+            }
         }
     });
 
@@ -69,6 +81,7 @@ module.exports = function(grunt) {
         'concat',
         'uglify',
         'cssmin',
+        'copy',
         'usemin',
         // 'gh-pages'
     ]);
