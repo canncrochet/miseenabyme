@@ -83,6 +83,6 @@ module.exports = function(grunt) {
         'cssmin',
         'copy',
         'usemin',
-        // 'gh-pages'
+        'gh-pages'
     ]);
 };
