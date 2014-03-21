@@ -1,0 +1,14 @@
+{
+  "name": "miseenabyme",
+  "version": "0.0.0",
+  "homepage": "http://miseenabyme.com",
+  "authors": [
+    "David Konsumer <konsumer@jetboystudio.com>"
+  ],
+  "description": "The source for miseenabyme.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prefixfree": "konsumer/prefixfree#~1.0.9"
+  }
+}
