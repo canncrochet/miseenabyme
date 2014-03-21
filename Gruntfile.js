@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                     'expand': true,
                     'flatten': true,
                     'dest': '<%= cfg.build %>',
-                    'src': ['<%= cfg.src %>/*.html', 'CNAME'],
+                    'src': ['<%= cfg.src %>/*.html'],
                     'filter': 'isFile'
                 }]
             }
