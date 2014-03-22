@@ -51,6 +51,16 @@ module.exports = function(grunt) {
             'default': ['<%= cfg.build %>']
         },
 
+        'imageEmbed': {
+            'dist': {
+                'src': [ "<%= cfg.build %>/assets/site.css" ],
+                'dest': "<%= cfg.build %>/assets/site.css",
+                'options': {
+                    'deleteAfterEncoding' : true
+                }
+            }
+        },
+
         'gh-pages': {
             'options': {
                 'base': '<%= cfg.build %>'
@@ -75,7 +85,7 @@ module.exports = function(grunt) {
     grunt.registerTask('server', 'Start a local static webserver', ['connect:dev']);
 
     grunt.registerTask('default', 'Minify & optimize all files in src, output goes in webroot', [
-        'clean',
+        'clean:default',
         'imagemin',
         'useminPrepare',
         'concat',
@@ -83,6 +93,7 @@ module.exports = function(grunt) {
         'cssmin',
         'copy',
         'usemin',
+        'imageEmbed',
         'gh-pages'
     ]);
 };
