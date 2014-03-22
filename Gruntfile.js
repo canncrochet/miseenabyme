@@ -51,16 +51,6 @@ module.exports = function(grunt) {
             'default': ['<%= cfg.build %>']
         },
 
-        'imageEmbed': {
-            'dist': {
-                'src': [ "<%= cfg.build %>/assets/site.css" ],
-                'dest': "<%= cfg.build %>/assets/site.css",
-                'options': {
-                    'deleteAfterEncoding' : true
-                }
-            }
-        },
-
         'gh-pages': {
             'options': {
                 'base': '<%= cfg.build %>'
@@ -93,7 +83,6 @@ module.exports = function(grunt) {
         'cssmin',
         'copy',
         'usemin',
-        'imageEmbed',
         'gh-pages'
     ]);
 };
