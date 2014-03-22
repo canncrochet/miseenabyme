@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "The source for miseenabyme.com",
   "scripts": {
-    "start": "grunt server"
+    "start": "grunt server",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
