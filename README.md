@@ -2,6 +2,11 @@
 
 Source for http://miseenabyme.com
 
-## DNS
+## Setup
 
-In DNS admin, CNAME to www canncrochet.github.io, redirect TLD to www.
+Install dependencies with `npm install`
+
+## Deploy
+
+Deploy to github, in hyper-efficient form, with `grunt`
+
